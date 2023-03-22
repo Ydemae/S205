@@ -1,0 +1,39 @@
+.navbar ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr 4fr 4fr 4fr;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px;
+    background-color: #656565;
+    transition: 0.7s all;
+}
+.navbar li{
+    margin: 5px;
+    margin-left: 20px;
+}
+.navbar li a:hover{
+    background-color: white;
+    color: #656565;
+    transition: 0.7s all;
+}
+.navbar{
+    background-color: black;
+    margin: 0;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.navbar .NavTitle{
+    padding: 28px;
+    font-size: 1.5em;
+    background-color: #656565;
+    font-weight: bold;
+    font-family: neonSans;
+    color: white;
+}
