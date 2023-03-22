@@ -1,7 +1,10 @@
+.GridNav{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
 .navbar ul {
     list-style-type: none;
-    display: grid;
-    grid-template-columns: 4fr 4fr 4fr 4fr 4fr 4fr 4fr;
+    display: flex;
 }
 .navbar li a{
     text-decoration: none;
@@ -15,11 +18,13 @@
     margin: 5px;
     margin-left: 20px;
 }
+
 .navbar li a:hover{
     background-color: white;
     color: #656565;
     transition: 0.7s all;
 }
+
 .navbar{
     background-color: black;
     margin: 0;    
@@ -34,6 +39,5 @@
     font-size: 1.5em;
     background-color: #656565;
     font-weight: bold;
-    font-family: neonSans;
     color: white;
 }
