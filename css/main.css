@@ -1,6 +1,13 @@
+/* Body */
+
+body{
+    background-color: #D6E4FF;
+}
+
+/*Navbar*/
 .GridNav{
     display: grid;
-    grid-template-columns: 1fr 8fr;
+    grid-template-columns: 2fr 8fr;
 }
 .navbar ul {
     list-style-type: none;
@@ -8,10 +15,10 @@
 }
 .navbar li a{
     text-decoration: none;
-    color: white;
+    color: #8E8E8E;
     display: block;
     padding: 15px;
-    background-color: #656565;
+    background-color: #FFFFFF;
     transition: 0.7s all;
 }
 .navbar li{
@@ -20,24 +27,21 @@
 }
 
 .navbar li a:hover{
-    background-color: white;
-    color: #656565;
+    color: black;
     transition: 0.7s all;
 }
 
 .navbar{
-    background-color: black;
-    margin: 0;    
+    background-color: white;
+    margin: 0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
 }
-.navbar .NavTitle{
-    padding: 28px;
-    font-size: 1.5em;
-    background-color: #656565;
-    font-weight: bold;
-    color: white;
+.NavImg{
+    background-color: #FFFFFF;
+    background: url(Images/logo-iut-metz.png) no-repeat center center;
+    background-size: 100%;
 }
