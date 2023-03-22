@@ -7,11 +7,13 @@ body{
 /*Navbar*/
 .GridNav{
     display: grid;
-    grid-template-columns: 2fr 8fr;
+    grid-template-columns: 2fr 8fr 1fr;
 }
 .navbar ul {
     list-style-type: none;
     display: flex;
+    position: relative;
+    left: 15%;
 }
 .navbar li a{
     text-decoration: none;
@@ -40,8 +42,41 @@ body{
     width: 100%;
     z-index: 1;
 }
+
+
+.reseaux{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: 10px;
+}
+
+/*Images*/
 .NavImg{
     background-color: #FFFFFF;
     background: url(Images/logo-iut-metz.png) no-repeat center center;
     background-size: 100%;
+}
+.you{
+    background: url(images/Youtube.png) no-repeat center center;
+    background-size: 100%;
+    padding:10px;
+    margin: 1px;
+}
+.twitter{
+    background: url(images/twitter.png) no-repeat center center;
+    background-size: 100%;
+    padding:10px;
+    margin: 1px;
+}
+.facebook{
+    background: url(images/facebook.png) no-repeat center center;
+    background-size: 100%;
+    padding:10px;
+    margin: 1px;
+}
+.insta{
+    background: url(images/instagram.png) no-repeat center center;
+    background-size: 100%;
+    padding:10px;
+    margin: 1px;
 }
