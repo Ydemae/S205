@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" >
+         <!--Utilisation d'un media pour mettre une condition à l'utilisation de chaque css, de cette manière le css s'adaptera à la résolution de l'écran (ou taille de la fenêtre)-->
+        <link rel="stylesheet" href="css/V1.css" >
+        <link rel="stylesheet" href="css/bootstrap.css" >
+        <title>PresProj</title>
+    </head>
+    <!--Affectation d'une classe spécifique au body afin de pouvoir modifier seulement cette page sans influer sur les autres body des autres pages-->
+    <body class="v1">
+        <!--Barre de navigation-->
+        <nav class="navbar">
+            <div class="FlexNav">
+                <div class="Links">
+                    <!--Menu de navigation pour pc-->
+                    <ul>
+                        <li ><a href="indexv1.html" class="activeV">Accueil</a></li>
+                        <li><a href="projetv1.html">Projets</a></li>
+                        <li><a href="contactv1.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="middle">
+            <div class="bandeau">
+                <div class="title">Présentation de projets de BUT</div>
+                <img src="css/Images/logoIutMetzInfo.png" alt="iutMetz">
+            </div>
+            <div class="middle">
+                <p>Rapide présentation de l'objectif du site genre pourquoi on est là quoi, vous pouvez aussi parler un peu de la formation si vous voulez faire du zèle. Pour le slideshow en dessous il faudra évidemment modifier les images pour mettre des images des SAE et mettre au lieu de "caption1, 2,3", des trucs comme "sae 101,102"
+                </p>
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="css/Images/Shacotage.png" style="width:100%" alt="image">
+                    <div class="text">Caption Text</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="css/Images/Screenshot_20200625_220359_com.entre2partiesapp2.jpg" style="width:100%" alt="image">
+                    <div class="text">Caption Two</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="css/Images/5wh1flmt3td51.png" style="width:100%" alt="image">
+                    <div class="text">Caption Three</div>
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <footer>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="indexv1.html">Accueil</a></li>
+                  </ol>
+            </footer>
+        </div>
+    </body>
+    <script src="slideshow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</html>

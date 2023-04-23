@@ -1,82 +1,168 @@
 /* Body */
 
-body{
-    background-color: #D6E4FF;
+.v1{
+    background-color: #225E79;
 }
 
 /*Navbar*/
-.GridNav{
-    display: grid;
-    grid-template-columns: 2fr 8fr 1fr;
-}
 .navbar ul {
     list-style-type: none;
     display: flex;
     position: relative;
-    left: 15%;
+    left: 30%;
 }
 .navbar li a{
     text-decoration: none;
-    color: #8E8E8E;
+    color: #8D9D9D;
     display: block;
-    padding: 15px;
-    background-color: #FFFFFF;
-    transition: 0.7s all;
+    padding: 1rem;
 }
 .navbar li{
-    margin: 5px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .navbar li a:hover{
-    color: black;
+    color: white;
     transition: 0.7s all;
 }
 
 .navbar{
-    background-color: white;
-    margin: 0;
+    background-color: #222222;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    height: 4rem;
     z-index: 1;
 }
 
+.navbar li a.activeV{
+    background-color: #080808;
+    color: #FFFFFF;
+}
 
-.reseaux{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+/*Bandeau et mise en forme des éléments du bandeau*/
+
+.bandeau{
+    background-color: #004575;
+    color: #DDDDDD;
+    display: flex;
+    margin: auto;
+}
+.title{
+    font-size: 2rem;
+    margin: auto;
+    margin-left: 2rem;
+}
+.bandeau img{
+    float: right;
+    margin: 5px;
+}
+
+/* middle et éléments de mise en forme dans le middle*/
+
+.middle{
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+.middle footer{
+    border-top: 1px solid #8D9D9D;
+    margin-left: 10px;
     margin-right: 10px;
 }
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+/* Autres*/
+.contact{
+    background-color: #D9D9D9;
+    color: black;
+    padding: 10px;
+}
+.contact h6{
+    margin: 10px;
+}
+.contact ul li{
+    list-style-type: none;
+    margin: 5px;
+}
 
-/*Images*/
-.NavImg{
-    background-color: #FFFFFF;
-    background: url(Images/logo-iut-metz.png) no-repeat center center;
-    background-size: 100%;
+/*Slideshow*/
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
 }
-.you{
-    background: url(images/Youtube.png) no-repeat center center;
-    background-size: 100%;
-    padding:10px;
-    margin: 1px;
+.mySlides {
+  display: none;
 }
-.twitter{
-    background: url(images/twitter.png) no-repeat center center;
-    background-size: 100%;
-    padding:10px;
-    margin: 1px;
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
-.facebook{
-    background: url(images/facebook.png) no-repeat center center;
-    background-size: 100%;
-    padding:10px;
-    margin: 1px;
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
-.insta{
-    background: url(images/instagram.png) no-repeat center center;
-    background-size: 100%;
-    padding:10px;
-    margin: 1px;
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode:forwards
+}
+
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}  
