@@ -92,7 +92,18 @@ footer a:hover{
     list-style-type: none;
     margin: 5px;
 }
-
+.blue{
+  color: cyan;
+}
+.twoCol{
+  display: grid;
+  grid-template-columns: 1fr 0.1fr 1fr;
+  margin-top: 30px;
+}
+.center{
+  text-align: center;
+  margin: 1rem;
+}
 /*Slideshow*/
 
 * {box-sizing:border-box}
