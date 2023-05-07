@@ -125,3 +125,8 @@ ul.Lproj li{
 .marg{
   margin: 1.5rem;
 }
+.centre{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

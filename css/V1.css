@@ -177,3 +177,9 @@ footer a:hover{
   from {opacity: 0.4}
   to {opacity: 1}
 }  
+
+.centre{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
