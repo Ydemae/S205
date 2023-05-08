@@ -134,5 +134,11 @@ ul.Lproj li{
   margin: 2rem;
   text-align: center;
   text-decoration: underline;
-  color: #6C70FF;
+  color: #6666FF;
+}
+.TxtGauche{
+  margin-right: 45px;
+}
+.TxtDroit{
+  margin-left: 45px;
 }
