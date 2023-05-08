@@ -130,3 +130,9 @@ ul.Lproj li{
 .rig{
   margin-left: 10rem;
 }
+.titre{
+  margin: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  color: #6C70FF;
+}
